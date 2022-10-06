@@ -44,6 +44,23 @@ body {
   width: 70%;
 }
 
+.box {
+  position: relative;
+  max-width: 600px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.box p {
+  padding: 15px;
+}
+
+.bag {
+  width: 20px;
+}
+
 /* Header Start */
 #header {
   display: flex;
@@ -52,6 +69,10 @@ body {
   padding: 20px 80px;
   background: #E3E6F3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index:999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -76,7 +97,7 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: #4F1429;
 }
 
 #navbar li a.active::after,
@@ -84,14 +105,13 @@ body {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: #4F1429;
   position: absolute;
   bottom: -4px;
   left: 20px;
 }
 
 /* Home Page */
-
 #trade-msg {
   background-image: url("videos/bg_video.mp4");
   height: 90vh;
@@ -101,17 +121,54 @@ body {
   padding: 0 80px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#trade-msg h4 {
+  padding-bottom: 15px;
+}
+
+#trade-msg h1 {
+  color: #4F1429;
+}
+
+#trade-msg button {
+  background-color: #4F1429;
+  border-radius: 100px;
+  color: #E8F9FD;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+
+  touch-action: manipulation;
+}
+
+#trade-msg button:hover {
+  color: #ffe4e1;
+  transform: scale(1.05);
 }
 
 #film-background {
   height: 100vh;
-width: 100vw;
-object-fit: cover;
-position: fixed;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-z-index: -1;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#feature fe-box {
+  width: 180px;
+
 }
