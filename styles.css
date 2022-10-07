@@ -36,6 +36,19 @@ h6 {
   margin-top: 40px 0;
 }
 
+button.normal {
+  font-size:14px;
+  font-weight:600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none:
+  outline: none;
+  transition: 0.2s;
+}
+
 body {
   width: 100%;
 }
@@ -167,10 +180,11 @@ body {
   z-index: -1;
 }
 
+/* Features Settings */
 #feature {
-  background: #E3E6F3;
+  background: #FFFFFF;
   padding: 30px 30px 20px 30px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -192,9 +206,8 @@ body {
 }
 
 #feature .fe-box img {
-    width: 80px;
-    margin-bottom: 10px;
-
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 #feature .fe-box h6 {
@@ -204,4 +217,116 @@ body {
   border-radius: 4px;
   color: #4F1429;
   background-color: #FFC4C4;
+}
+
+/* Feautured Products */
+#products {
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+#products .product-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#products h2 {
+  padding: 40px 10px;
+}
+
+#products .prod {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid ##FFD1D1;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+#products .prod:hover {
+  box-shadow: :20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+#products .prod img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+#products .prod .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#products .prod .description span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#products .prod .description h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#products .prod .description h4 {
+  padding-top: 7px;
+  color: #4F1429;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#products .prod p {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#products .prod p:hover {
+  color: #FFC4C4;
+  border: 0.5px solid #4F1429;
+  position: absolute;
+}
+
+/*Banner*/
+
+#banner {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/banner-bg.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 30px;
+  padding-bottom:20px;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 60px;
+  padding: 10px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#banner h2 span{
+  color: #EB1D36;
 }
