@@ -23,7 +23,12 @@ h4 {
 }
 
 h6 {
-  font-weight: 16px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
   color: #465b52;
   margin: 15px 0 20px 0;
 }
@@ -68,10 +73,6 @@ body {
 
 .box p {
   padding: 15px;
-}
-
-.bag {
-  width: 20px;
 }
 
 /* Header Start */
@@ -127,6 +128,10 @@ body {
 #mobile {
   display: none;
   align-items: center;
+}
+
+#close {
+  display: none;
 }
 
 /* Home Page */
@@ -278,6 +283,16 @@ body {
   padding-top: 7px;
   color: #1a1a1a;
   font-size: 14px;
+  transition: 0.2s;
+}
+
+#products .prod:hover .description h5 {
+  color: #4F1429;
+}
+
+#products .prod .description i {
+  color: rgb(240, 177, 18);
+  font-size: 12px;
 }
 
 #products .prod .description h4 {
@@ -287,21 +302,24 @@ body {
   font-weight: 700;
 }
 
-#products .prod p {
+#products .prod .cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-weight: 500;
+  color: #FFC4C4;
+  border: 0.5px solid #4F1429;
+  transition: 0.2s;
   position: absolute;
   bottom: 20px;
   right: 10px;
 }
 
-#products .prod p:hover {
-  color: #FFC4C4;
-  border: 0.5px solid #4F1429;
+#products .prod .cart:hover {
+  color: #4F1429;
+  border: 1px solid #FFC4C4;
   position: absolute;
 }
 
@@ -316,6 +334,7 @@ body {
   height: 60vh;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 #banner h4 {
@@ -386,6 +405,13 @@ body {
   padding-bottom: 15px;
 }
 
+#sm-banner .banner-box:hover button,
+#sm-banner .banner-box2:hover button {
+  background: #FFC4C4;
+  border: 1px solid #FFC4C4;
+  transition: 0.2s ease;
+}
+
 button.white {
   font-size: 13px;
   font-weight: 600;
@@ -423,7 +449,8 @@ button.white:hover {
   height: 30vh;
   background-size: cover;
   background-position: center;
-  padding-top: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 #banner-3 .banner-box-m {
@@ -523,6 +550,12 @@ footer .col img {
   width: 65%;
 }
 
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
 footer h4 {
   font-size: 20px;
   padding-bottom: 20px;
@@ -544,21 +577,15 @@ footer .follow {
   margin-top: 20px;
 }
 
-footer .follow img {
-  width: 25px;
-  padding-right: 2px;
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
   cursor: pointer;
 }
 
 footer .install .row img {
-  width: 60px;
   border: 1px solid #FFC4C4;
   border-radius: 4px;
-}
-
-footer .follow img:hover,
-footer a:hover {
-  color: #FFC4C4;
 }
 
 footer .copyright {
@@ -566,9 +593,18 @@ footer .copyright {
   text-align: center;
 }
 
+footer .follow i:hover,
+footer a:hover {
+  color: #FFC4C4;
+}
+
 /* Cart Page */
 /*Start Media Query */
 @media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -595,19 +631,244 @@ footer .copyright {
 
   #mobile {
     display: flex;
-    align-items: center;
   }
 
-  #mobile i img {
-    width: 30px;
-    padding-left: 10px;
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #bar {
+    display: initial;
   }
 
   #close {
+    display: initial;
     position: absolute;
     top: 30px;
     left: 30px;
     color: #222;
-    font-size: 24px;
   }
+
+  #lg-bag {
+    displays: none;
+  }
+
+  #trade-msg {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: : top 30% right 30%;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feauture .fe-box {
+    margin: 15px 15px;
+  }
+
+  #products .product-container {
+    justify-content: center;
+  }
+
+  #products .prod {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+    padding: 30px;
+  }
+
+  #banner-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px;
+  }
+
+  #banner-3 .banner-box {
+    width: 28%;
+  }
+
+  #newsletter .form {
+    width: 70%;
+  }
+
+  /* Contact Page */
+  #form-details {
+    padding: 40px;
+  }
+
+  #form-details form {
+    width: 50%;
+  }
+}
+
+@media (max-width:477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 38px
+  }
+
+  h2 {
+    font-size: 32px
+  }
+
+  #trade-msg {
+    padding: 0 20px;
+    background-position: 55%
+  }
+
+  #feature {
+    justify-content: space-between;
+  }
+
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+
+  #products .prod {
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box {
+    margin-top: 20px;
+  }
+
+  #banner-3 {
+    padding: 0 20px;
+  }
+
+  #banner-3 .banner-box {
+    width: 100%;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  #newsletter .form {
+    width: 100%;
+  }
+
+  footer .copyright {
+    text-align: start;
+  }
+
+  /* Blog Page */
+  #blog {
+    padding: 100px 20px 20px 20px;
+  }
+
+  #blog .blog-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  #blog .blog-details {
+    width: 100%;
+  }
+
+  #about-app .video {
+    width: 100%;
+  }
+
+  /* About Page */
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+  }
+
+  #about-head div {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+
+  /* Contact Page */
+  #contact-details .details {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  #contact-details .map {
+    width: 100%;
+  }
+
+  #contact-details {
+    flex-wrap: wrap;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  #form-details form {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  /* Cart Page */
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #cuopon,
+  #subtotal {
+    width: 100%;
+  }
+
+  #subtotal {
+    padding: 20px;
+  }
+
+  /* SIngle Product */
+  #prodetails {
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+    padding-top: 30px;
+  }
+}
 }

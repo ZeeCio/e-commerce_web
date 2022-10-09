@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,21 +22,19 @@
     <a href="#"><img src="images/The Perfume Room.png" class="logo" alt="The perfume room"></a>
 
     <div>
-      <ui id="navbar">
-        <li><a href="index.html">Home</a></li>
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html"><img src="images/bag.png" class="bag" alt="shopping bag"></img></a></li>
-        <a href="#" id='close'><img src="images\icons\close.png" class="bag" alt=""></a>
-      </ui>
+        <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+        <a href="#" id="close"><i class="far fa-shopping-bag"></i></a>
+      </ul>
     </div>
     <div id="mobile">
-      <a href="cart.html"><img src="images/bag.png" class="bag" alt="shopping bag"></img></a>
-      <i id="bar">
-        <img src="images\icons\menu-list.png" alt="">
-      </i>
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
     </div>
   </section>
 
@@ -95,15 +94,15 @@
           <span>Alien by Thierry Mugler</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\carolina-herrera-good-girl-velvet-fatale-80ml-500x500.jpg" alt="carolina herrera">
@@ -111,15 +110,15 @@
           <span>Carolina Herrera</span>
           <h5>Eau De Parfum 75ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-chanel-coco-mademoiselle-500x500.png" alt="coco mademoiselle">
@@ -127,15 +126,15 @@
           <span>COCO Mademoiselle</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-chanel-gabrielle-1-500x500.png" alt="chanel gabrielle">
@@ -143,15 +142,15 @@
           <span>Gabrielle by Chanel</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-dior-jadore-500x500.png" alt="Jadore by DIOR">
@@ -159,15 +158,15 @@
           <span>Jadore by DIOR</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-dior-joy-1-500x500.png" alt="Joy by DIOR">
@@ -175,15 +174,15 @@
           <span>Joy by DIOR</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-lancome-idole-1-500x500.png" alt="Idole by LANCOME">
@@ -191,15 +190,15 @@
           <span>Idole by LANCOME</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-lancome-la-vie-est-belle-292x292.png" alt="la vie est belle">
@@ -207,15 +206,15 @@
           <span>La Vie est Belle LANCOME</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-paco-rabanne-olympea-500x500.png" alt="Olympea by Paco Rabanne">
@@ -223,15 +222,15 @@
           <span>Olympea by Paco Rabanne</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-tom-ford-white-patchouli-1-200x200.png" alt="TOM FORD White Patchouli">
@@ -239,15 +238,15 @@
           <span>TOM FORD White Patchouli</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-unisex-tom-ford-black-orchid-500x500.png" alt="Tom For Black Orchid">
@@ -255,15 +254,15 @@
           <span>Tom For Black Orchid</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-barbati-versace-eros-500x500.png" alt="Versace EROS">
@@ -271,15 +270,15 @@
           <span>Versace EROS</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
 
     </div>
@@ -301,15 +300,15 @@
           <span>Alien by Thierry Mugler</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-barbati-armani-code-500x500.png" alt="carolina herrera">
@@ -317,15 +316,15 @@
           <span>Carolina Herrera</span>
           <h5>Eau De Parfum 75ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-barbati-chanel-platinum-egoiste-1-500x500.png" alt="coco mademoiselle">
@@ -333,15 +332,15 @@
           <span>COCO Mademoiselle</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-barbati-chanel-platinum-egoiste-1-500x500.png" alt="chanel gabrielle">
@@ -349,15 +348,15 @@
           <span>Gabrielle by Chanel</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-barbati-paco-rabanne-invictus-200x200.png" alt="Jadore by DIOR">
@@ -365,13 +364,13 @@
           <span>Jadore by DIOR</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
-          <h4>£40</h4>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <p>🛒</p>
       </div>
@@ -381,15 +380,15 @@
           <span>Joy by DIOR</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-unisex-tom-ford-tobacco-vanille-200x200.png" alt="Idole by LANCOME">
@@ -397,15 +396,15 @@
           <span>Idole by LANCOME</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-lancome-la-vie-est-belle-292x292.png" alt="la vie est belle">
@@ -413,15 +412,15 @@
           <span>La Vie est Belle LANCOME</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-paco-rabanne-olympea-500x500.png" alt="Olympea by Paco Rabanne">
@@ -429,15 +428,15 @@
           <span>Olympea by Paco Rabanne</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-dama-tom-ford-white-patchouli-1-200x200.png" alt="TOM FORD White Patchouli">
@@ -445,15 +444,15 @@
           <span>TOM FORD White Patchouli</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-unisex-tom-ford-black-orchid-500x500.png" alt="Tom For Black Orchid">
@@ -461,15 +460,15 @@
           <span>Tom For Black Orchid</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
       <div class="prod">
         <img src="images\png perfumes\tester-parfum-barbati-versace-eros-500x500.png" alt="Versace EROS">
@@ -477,15 +476,15 @@
           <span>Versace EROS</span>
           <h5>Eau De Parfum 100ml</h5>
           <div class="star">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h4>£40</h4>
         </div>
-        <p>🛒</p>
+        <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
       </div>
 
     </div>
@@ -544,9 +543,9 @@
       <div class="follow">
         <h4>Follow us</h4>
         <div class="icon">
-          <img src="images\contact-icons\face.png" alt="">
-          <img src="images\contact-icons\insta.png" alt="">
-          <img src="images\contact-icons\twitter.png" alt="">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
         </div>
       </div>
     </div>
@@ -573,11 +572,11 @@
       <h4>Install App</h4>
       <p>From App Store or Google Play</p>
       <div class="row">
-        <img src="images\apps\app-store.png" alt="">
-        <img src="images\apps\google-play.png" alt="">
+        <img src="images\apps\app.jpg" alt="">
+        <img src="images\apps\play.jpg" alt="">
       </div>
       <p>Secured Payment Gateways</p>
-      <img src="images\apps\pay.jpg" alt="">
+      <img src="images\apps\pay.png" alt="">
     </div>
 
     <div class="copyright">
@@ -586,7 +585,7 @@
 
   </footer>
 
-  <script src="scripts/jquery.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
