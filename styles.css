@@ -546,7 +546,7 @@ footer .col {
 }
 
 footer .col img {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 65%;
 }
 
@@ -585,7 +585,11 @@ footer .follow i {
 
 footer .install .row img {
   border: 1px solid #FFC4C4;
-  border-radius: 4px;
+  border-radius: 2px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
 }
 
 footer .copyright {
@@ -1055,7 +1059,7 @@ footer a:hover {
   }
 
   #navbar.active {
-    right: 0px;
+    right: 0;
   }
 
   #navbar li {
@@ -1084,8 +1088,9 @@ footer a:hover {
     color: #222;
   }
 
-  #lg-bag {
-    displays: none;
+  #lg-bag,
+  #lg-search {
+    display: none;
   }
 
   #trade-msg {
@@ -1098,8 +1103,8 @@ footer a:hover {
     justify-content: center;
   }
 
-  #feauture .fe-box {
-    margin: 15px 15px;
+  #feature .fe-box {
+    margin: 15px;
   }
 
   #products .product-container {
@@ -1162,7 +1167,7 @@ footer a:hover {
     padding: 10px 30px;
   }
 
-  #hero {
+  #trade-msg {
     padding: 0 20px;
     height: 70vh;
     background-position: 55%;
@@ -1177,7 +1182,7 @@ footer a:hover {
     margin: 0 0 15px 0;
   }
 
-  #products .pro {
+  #products .prod {
     width: 100%;
   }
 
