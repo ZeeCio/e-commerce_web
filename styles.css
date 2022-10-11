@@ -589,7 +589,7 @@ footer .install .row img {
 }
 
 footer .install img {
-    margin: 10px 0 15px 0;
+  margin: 10px 0 15px 0;
 }
 
 footer .copyright {
@@ -603,7 +603,6 @@ footer a:hover {
 }
 
 /************************************** Shop Page */
-
 #page-header {
   height: 40vh;
   display: flex;
@@ -622,7 +621,7 @@ footer a:hover {
 
 #pagination {
   text-align: center;
-   padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 #pagination a {
@@ -753,21 +752,21 @@ footer a:hover {
 }
 
 #blog .blog-details a:hover {
-  color: #088178;
+  color: #FFC4C4;
 }
 
 #blog .blog-details a:hover::after {
-  background-color: #088178;
+  background-color: #FFC4C4;
 }
 
 #blog .blog-box h1 {
   position: absolute;
   font-weight: 700;
   font-size: 70px;
-  color: #c9cbce;
+  color: #181818;
   top: -40px;
   left: 0;
-  z-index: -9;
+
 }
 
 /* About Page */
@@ -821,6 +820,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 30px;
 }
 
 #contact-details .details span,
@@ -859,6 +859,7 @@ footer a:hover {
 #contact-details .map {
   width: 55%;
   height: 400px;
+  padding-right: 30px;
 }
 
 #contact-details .map iframe {
@@ -891,7 +892,7 @@ footer a:hover {
 }
 
 #form-details form button {
-  background-color: #088178;
+  background-color: #FFC4C4;
   color: #fff;
 }
 
@@ -1011,7 +1012,7 @@ footer a:hover {
 
 #cuopon button,
 #subtotal button {
-  background: #088178;
+  background: #FFC4C4;
   color: #fff;
   padding: 12px 20px;
 }
